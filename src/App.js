@@ -12,6 +12,7 @@ import Login from './screens/Login';
 import 'bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle';
+import Signup from './screens/Signup';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login/>} />
+          <Route path='/signup' element={<Signup />} />
         </Routes>
       </div>
     </Router>
