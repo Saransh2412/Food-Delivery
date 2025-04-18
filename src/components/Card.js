@@ -17,7 +17,7 @@ export default function Card() {
         {Array.from(Array(6), (e, i) => {
           return (
             <option key={i + 1} value={i + 1}>
-              {i + 1}{" "}
+              {i + 1}{" "}  
             </option>
           );
         })}

@@ -12,7 +12,7 @@ export default function Home() {
 
     <div><Carousel/></div>
     
-      <div  className="m-3">
+      <div  className="m-3 flex flex justify-content-around flex-wrap">
         <Card/>
         <Card/>
         <Card/>

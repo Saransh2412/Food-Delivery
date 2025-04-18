@@ -3,7 +3,7 @@ import React from 'react'
 export default function Carousel() {
   return (
     <div>
-      <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" style={{objectFit :"contain !important"}}> 
+      <div id="carouselExampleFade" className="carousel slide carousel-fade h-15vh" data-bs-ride="carousel" style={{objectFit :"fit !important"}}> 
   <div className="carousel-inner" id='carousel'>
     <div className="carousel-caption" style={{zIndex: '10'}}>
     <form className="d-flex">
@@ -12,13 +12,13 @@ export default function Carousel() {
     </form>
     </div>
     <div className="carousel-item active">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqOMqr744Yf9fAfNDYxsYqJC6WSSOUYvATD6YZW3WQHQapziGSH3poEg&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqOMqr744Yf9fAfNDYxsYqJC6WSSOUYvATD6YZW3WQHQapziGSH3poEg&s" style={{filter:'brightness(30%)'}} className="d-block w-100" alt="..."/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqOMqr744Yf9fAfNDYxsYqJC6WSSOUYvATD6YZW3WQHQapziGSH3poEg&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqOMqr744Yf9fAfNDYxsYqJC6WSSOUYvATD6YZW3WQHQapziGSH3poEg&s" style={{filter:'brightness(30%)'}} className="d-block w-100 h-15vh" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://media.istockphoto.com/id/1292635321/photo/veg-steam-momo-nepalese-traditional-dish-momo-stuffed-with-vegetables-and-then-cooked-and.jpg?s=1024x1024&w=is&k=20&c=EsDMBt5L1SzZh6OrEVCdEDGzZxQ9zFQ-CpOnLw1WYmI="style={{filter:'brightness(30%)'}}   className="d-block w-100" alt="..."/>
+      <img src="https://media.istockphoto.com/id/1292635321/photo/veg-steam-momo-nepalese-traditional-dish-momo-stuffed-with-vegetables-and-then-cooked-and.jpg?s=1024x1024&w=is&k=20&c=EsDMBt5L1SzZh6OrEVCdEDGzZxQ9zFQ-CpOnLw1WYmI="style={{filter:'brightness(30%)'}}   className="d-block w-100 h-15vh" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://image.made-in-china.com/155f0j00ypukwrlcfToJ/New-Sexy-Underwear-Steel-Bowknot-Bikini-Sexy-Hollow-Three-Point-Lingerie-Set.webp" style={{filter:'brightness(30%)'}} className="d-block w-100" alt="..."/>
+      <img src="https://image.made-in-china.com/155f0j00ypukwrlcfToJ/New-Sexy-Underwear-Steel-Bowknot-Bikini-Sexy-Hollow-Three-Point-Lingerie-Set.webp" style={{filter:'brightness(30%)'}} className="d-block w-100 h-15vh" alt="..."/>
       
     </div>
   </div>
