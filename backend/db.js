@@ -13,7 +13,7 @@ const MongoDB = () => {
 
       try {
         const data = await FoodItem.find({});
-        console.log('🍽️ Food Items:',data);
+        // console.log('🍽️ Food Items:',data);
       } catch (queryErr) {
         console.error('❌ Error fetching food items:', queryErr);
       }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 
 export default function Login() {
   const [credentials, setCredentials] = useState({
@@ -8,14 +8,14 @@ export default function Login() {
           password: "",
           
       });
-  
+  let navigate = useNavigate();
       const handleChange = (e) => {
           setCredentials({ ...credentials, [e.target.name]: e.target.value });
       };
   
       const handleSubmit = async (e) => {
           e.preventDefault();
-          const response = await fetch('http://localhost:5000/api/createuser', {
+          const response = await fetch('http://localhost:5000/api/loginuser', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
@@ -31,7 +31,10 @@ export default function Login() {
           const json = await response.json();
           console.log(json);
           if (json.success) {
-              alert("Account created successfully");
+              alert("Login successfully");
+              localStorage.setItem('authToken', json.authToken);
+              console.log(localStorage.getItem('authToken'));
+              navigate("/");
           } else {
               alert("Error creating account: " + json.error);
           }
